@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us Section</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'dj_app/css/about.css' %}"/>
+	<style>
+		.section{
+			width: 100%;
+			/* min-height: ;  */
+			height: 750px;
+			/* background-color: #ddd; */
+			background-image: url("/static/dj_app/images/pexels-алекке-блажин-9925115.jpg");
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>About Us</h1>
+				</div>
+				<div class="content">
+					<h2 style="font-size:30px;" onmouseout="this.style.font='normal 24pt arial'"  onmouseover="this.style.font='normal 35pt arial'">Happy Stems</h2>
+					<p style="font-size:20px;" onmouseout="this.style.color='#F2D2BD'" onmouseover="this.style.color='#FFB6C1'">We are committed to offering only the finest and most beautiful floral arrangements and gifts, backed by service that is friendly, helpful and prompt. Our professional staff are dedicated to making your experience a pleasant one because all of our customers are important to us.  We always go the extra mile to make your floral gift perfect.
+
+Our florists have original, creative and fun ideas about how to make any gift occasion something special for both you and the recipient, whoever they may be and for whatever purpose your gift is for. We also offer a wedding bouquet and wedding function flowers service guaranteed to please.
+
+Our store allow local and international visitors to order flowers online India.  We are also a member of Interflora, worldwide.</p>
+					<div class="button">
+						<a href="#">Read More</a>
+					</div>
+				</div>
+				<div class="social">
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="image-section">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<!-- <img src="HappyStem.jpg" weight="1000px" height="5000px"> -->
+				<video width="320" height="210" autoplay loop muted>
+					{% load static %}
+               <source src={% static "dj_app/images/HappyStem.mp4" %} type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+<!-- "onmouseover="this.style.color='#FFB6C1'" onmouseout="this.style.color='#F3CFC6;'" -->

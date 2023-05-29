@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shop Now page</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'dj_app/css/shopnow.css' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Hebrew:wght@600&family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+ <section class="banner-section">
+    {% load static %}
+    <img src="{% static "dj_app/images/shopNow django/banner1.jpg" %}" alt="home" />
+ </section>
+ <section class="occasions-header">
+   <div class="occasions">
+     <h1 style="text-align:center">Flowers for occasions</h1>
+     </div>
+
+
+     <section class="gallery" id="gallery">
+
+         <div class="box-container">
+
+             <div class="box">
+                {% load static %}
+                <img src="{% static "dj_app/images/shopNow django/pexels-pixabay-264787.jpg" %}" alt="home" />
+                 <div class="content">
+                     <h3>Birthday</h3>
+                     <a href="/shopNowsub" class="btn">see more</a>
+                 </div>
+             </div>
+             <div class="box">
+                {% load static %}
+                <img src="{% static "dj_app/images/shopNow django/9dd2123ea85bc3dcd42443c9bb3bdbe1.png" %}" alt="home" />
+                 <div class="content">
+                     <h3>Anniversary</h3>
+                     <a href="/Anniversary" class="btn">see more</a>
+                 </div>
+             </div>
+             <div class="box">
+                {% load static %}
+                <img src="{% static "dj_app/images/shopNow django/love N romance.jpg" %}" alt="home" />
+                 <div class="content">
+                     <h3>Love N Romance</h3>
+                     <a href="/loveNromance" class="btn">see more</a>
+                 </div>
+             </div>
+         </div>
+     </section>
+ </section>
+ <section class="banner-section1">
+    {% load static %}
+     <img src="{% static "dj_app/images/shopNow django/salesbanner.jpg" %}" width="1500px" alt="no image">
+ </section>
+
+  </body>
+</html>

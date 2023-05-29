@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flower Shop</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'dj_app/css/home index.css' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Hebrew:wght@600&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        .banner{
+            width: 100%;
+            height: 700px;
+            background-color: lightgray;
+            background-image: url("/static/dj_app/images/Banner.jpg");
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+    </style>
+    <script type="text/javascript">
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+    </script>
+</head>
+<body>
+
+        <section class="banner" id="banner">
+
+            <div class="banner-overlay">
+
+                <header class="header">
+
+                    <div class="header-container">
+
+                        <div class="logo">
+                             Happy Stems
+                        </div>
+                        <div class="nav">
+                         <a href="#banner"><p class="nav-link">Home</p></a>
+                         <a href="/about"><p class="nav-link">About</p></a>
+                         <a href="/shopNow"><p class="nav-link">ShopNow</p></a>
+                         <a href="/feed1"><p class="nav-link">Feedback</p></a>
+                         <!-- <p class="nav-link">OrderNow</p> -->
+                          <a href="/login"><p class="nav-link">Login</p></a>
+                          <a href=""><p class="nav-link">Sign up</p></a>
+                        </div>
+                    </div>
+
+                </header>
+
+
+                <div class="banner-content">
+
+                    <h1 class="title">The Best <span class="bld">FLOWER</span> Shopping Destination</h1>
+
+                    <!-- <p class="content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit praesentium ipsa libero quas sapiente. Quasi facere quaerat excepturi quam ipsum suscipit non pariatur dolores atque. Facilis nesciunt labore optio qui.
+                    </p> -->
+
+                    <button class="btn">Order Now</button>
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+
+        <section class="flowers" id="flowers">
+
+                <marquee direction="right" class="sales" scrollamount="15"> 🌷🌸Big Sale Upto 50% Off!! Order Now and do particiapte in HappyStem Program🌷🌸  </marquee>
+                  <h1 class="title section-title">Best Sellers!</h1>
+
+                <div class="flowers-container">
+
+                    <div class="flower">
+                        <div class="image">
+                            {% load static %}
+                            <img class="flower-img" src="{% static "dj_app/images/flowers-1.jpg" %}" alt="home" />
+                        </div>
+                        <div class="image-content">
+                            <h2 class="flower-title">Beautiful Roses</h2>
+                            <p class="flower-content">
+                                Price:Rs150/-
+                            </p>
+                            <button class="flower-btn">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="flower">
+                        <div class="image">
+                            {% load static %}
+                            <img class="flower-img" src="{% static "dj_app/images/img-2.jpg" %}" alt="home" />
+                        </div>
+                        <div class="image-content">
+                            <h2 class="flower-title">Mesmerizing Peony</h2>
+                            <p class="flower-content">
+                                Price:Rs 352/-
+                            </p>
+                            <button class="flower-btn">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="flower">
+                        <div class="image">
+                            {% load static %}
+                            <img class="flower-img" src="{% static "dj_app/images/img-3.jpg" %}" alt="home" />
+                        </div>
+                        <div class="image-content">
+                            <h2 class="flower-title">Spectacular Tulips</h2>
+                            <p class="flower-content">
+                              Price:Rs 450/-
+                            <button class="flower-btn">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="flower">
+                        <div class="image">
+                            {% load static %}
+                            <img class="flower-img" src="{% static "dj_app/images/img-4.jpg" %}" alt="home" />
+                        </div>
+                        <div class="image-content">
+                            <h2 class="flower-title">Wild Ranunculus</h2>
+                            <p class="flower-content">
+                                Price:Rs 500/-
+                            </p>
+                            <button class="flower-btn">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="flower">
+                        <div class="image">
+                            {% load static %}
+                            <img class="flower-img" src="{% static "dj_app/images/img-5.jpg" %}" alt="home" />
+                        </div>
+                        <div class="image-content">
+                            <h2 class="flower-title">Cute Amaryllis</h2>
+                            <p class="flower-content">
+                                Price:Rs 350/-
+                            </p>
+                            <button class="flower-btn">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="flower">
+                        <div class="image">
+                            {% load static %}
+                            <img class="flower-img" src="{% static "dj_app/images/img-7.jpg" %}" alt="home" />
+                        </div>
+                        <div class="image-content">
+                            <h2 class="flower-title">Lovely Tuplips</h2>
+                            <p class="flower-content">
+                                Price:Rs 230/-
+                            <button class="flower-btn">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="flower">
+                        <div class="image">
+                            {% load static %}
+                            <img class="flower-img" src="{% static "dj_app/images/img-8.jpg" %}" alt="home" />
+                        </div>
+                        <div class="image-content">
+                            <h2 class="flower-title">Bewildered Dahlia</h2>
+                            <p class="flower-content">
+                              Price:Rs 159/-
+                            </p>
+                            <button class="flower-btn">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="flower">
+                        <div class="image">
+                            {% load static %}
+                            <img class="flower-img" src="{% static "dj_app/images/img-9.jpg" %}" alt="home" />
+                        </div>
+                        <div class="image-content">
+                            <h2 class="flower-title">Fanciful Lavender</h2>
+                            <p class="flower-content">
+                                Price:Rs 760/-
+                            </p>
+                            <button class="flower-btn">Order Now</button>
+                        </div>
+                    </div>
+
+                    <button type="button" name="button" class="button">Explore Now <big><big>&#x21d2;</big></big></button>
+
+                </div>
+
+                <button class="open-button" onclick="openForm()">NeedHelp &#x2753;</button>
+
+        <div class="chat-popup" id="myForm">
+        <form action="" class="form-container">
+        <h1>Chat</h1>
+
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+        </div>
+
+        </section>
+
+
+
+
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>About us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+                </div>
+                <div class="box">
+                    <h3>Branch locations</h3>
+                    <a href="#">india</a>
+                    <a href="#">USA</a>
+                    <a href="#">japan</a>
+                    <a href="#">france</a>
+                </div>
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="#">home</a>
+                    <a href="#">Shop Now</a>
+                    <a href="#">gallery</a>
+                    <a href="#">Feedback</a>
+                    <a href="/about">About</a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+</body>
+</html>

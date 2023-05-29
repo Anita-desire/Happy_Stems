@@ -1,0 +1,16 @@
+<html>
+  <head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'dj_app/css/style.css' %}"/>
+  </head>
+  <body style=" background-image: url('https://c0.wallpaperflare.com/preview/141/708/917/white-roses-garden-white-flowers-evening.jpg')">
+    <div class="banner-overlay">
+   <h1 style="text-align:center"> USERS FORM ENTRY </h1>
+    <form method="POST" style="text-align:center">
+       {% csrf_token %}
+        {{ form.as_p}}
+    <input type="submit" value="Submit" style="font-size: 20px;background-color:blue;color:white;">
+    </form>
+  </div>
+</body>
+</html>

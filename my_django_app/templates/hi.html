@@ -1,0 +1,23 @@
+<html>
+    <h1>Users data</h1>
+<table border=1>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            city
+        </th>
+    </tr>
+     {% for x in dblist %}
+       <tr>
+        <td>
+            {{x.name}}
+        </td>
+        <td>
+            {{x.city}}
+        </td>
+    </tr>
+     {% endfor %}
+</table>
+</html>
